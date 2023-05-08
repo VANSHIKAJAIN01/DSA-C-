@@ -1,0 +1,24 @@
+#include <iostream>
+#include<limits.h>
+//for int_min
+using namespace std;
+//here one of 0 index then last then 1 st index then second last and so on
+int main()
+{
+    //array declare
+    int arr[20]={1,2,3,4,5};
+    int size =5,start =0,end = size-1;
+    while(true){
+        if(start>end)
+        break;
+        else if(start == end)
+        cout<<arr[start]<<" ";
+        else{
+        cout<<arr[start]<<" ";
+        cout<<arr[end]<<" ";
+        }
+        start++;
+        end--;
+    }
+    return 0;
+}
